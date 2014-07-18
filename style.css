@@ -180,13 +180,12 @@ svg {
 
 @media screen and (min-width: 320px) and (max-width: 660px){
 
+	body {
+		width: 640px;
+	}
+
 	#wrap {
 		width: 495px;
 		height: 300px;
 	}
-}
-
-@media screen and (min-width: 660px) {
-
-
 }
