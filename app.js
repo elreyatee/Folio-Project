@@ -1,6 +1,10 @@
 var $button = $('button');
 var $wrap = $('#wrap');
 var index = 0;
+var $menu = $('header a');
+var $nav = $('.nav');
+
+new WOW().init();
 
 var loadPortfolio = function() {
 	$.getJSON('json/portfolio.json', function(data){
@@ -11,8 +15,7 @@ var loadPortfolio = function() {
 		$('#wrap').addClass('animated flipInY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 			$(this).removeClass();
 		});
-		$('#wrap a:first-child').attr('href', data[index].link);
-		$('.side-a').css({"background":"url('" + data[index].image + "')"});
+		$('#wrap a:first-child').attr('href', data[index].link).css({"background-image":"url('" + data[index].image + "')"});
 	});
 };
 
@@ -25,11 +28,22 @@ $button.on('click', function(e){
     loadPortfolio();
 });
 
+/********* Smooth scroll effect when clicking nav links **********/
+
 $('a[href*=#]').click(function(e){
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
     e.preventDefault();
+});
+
+$menu.on('click', function(e){
+	e.preventDefault();
+	if($nav.css('display') === 'none') {
+		$nav.slideDown('slow');
+	} else {
+		$nav.slideUp('slow');
+	}
 });
 
 

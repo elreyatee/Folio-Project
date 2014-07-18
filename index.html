@@ -2,62 +2,85 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Ellery Temple | Front-End Web Developer</title>
+	<title>Ellery Jr. - Web Developer</title>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel="stylesheet" type="text/css" href="animate.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
 	<section id="header">
 		<header>
-			<nav>
-				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-			<h1>Ellery Temple Jr.<br>.....</h1>
-			<h2>Front-End Web Developer</h2>
+			<a href="#menu"><i class="fa fa-navicon fa-3x icon"></i></a>
+			<h1>Ellery Temple Jr.</h1>
+			<p>Front-End Web Developer</p>
 		</header>
-
+		<div id="menu" class="nav">
+			<hr>
+			<ul>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
 	</section>
 
 	<section id="about">
 		<article>
-			<h2>About Me</h2>
-
-			<p>Hello! I am an audio/video integrator and aspiring web developer from the San Francisco, Bay Area.  I've always enjoyed technology, comic books and drawing my own characters, so web development is a natural progression for me.  I've completed the Front-End Development track at Thinkful.com and plan on refining my skills by working on freelance projects and continuing my education. When I'm not practicing HTML5, CSS3, and Javascript/jQuery, I enjoy watching movies, playing video games and listening to music.</p>
-
+			<!--<img src="">-->
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta perferendis eaque, assumenda placeat inventore quasi qui nobis mollitia illo, ipsa, ipsum earum doloribus ad dolores hic molestias alias minima atque.</p>
 		</article>
 	</section>
 
-	<section id="portfolio">
+	<section id="services" class="wow fadeIn data-wow-offset="1"">
 		<article>
-			<h2>Portfolio</h2>
+			<h2 class="title">Services</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum at pariatur distinctio eveniet blanditiis ipsum molestias quo nostrum, maxime maiores odio sed cumque modi laboriosam eaque iusto, esse minus iure!</p>
+			<div class="wrapper">
+				<img>
+				<p></p>
+
+				<img>
+				<p></p>
+
+				<img>
+				<p></p>
+			</div>
+			<p>You can download a copy of my resume<a href=""> here.</a></p>
+		</article>
+	</section>
+
+	<section id="portfolio" class="wow fadeIn data-wow-offset="1"">
+		<article>
+			<h2 class="title">Portfolio</h2>
 			<div id="wrap">
-				<a href="#"><img class="side-a"></a>
-				<p>practice</p>
+				<a href="#"></a>
+				<p style="display:none"></p>
 			</div>
 			<button id="spinner">Click Me!</button>
 		</article>
 	</section>
 
-	<section id="contact">
-		<footer>
+	<footer id="contact">
+		<article>
+			<h2>Contact</h2>
+			<a href="mailto:elreyatee@gmail.com">elreyatee@gmail.com</a><br>
+			<a href="tel:9252160296">925.216.0296</a>
 			<ul>
-				<li><a href="https://www.linkedin.com/pub/ellery-temple/47/737/1a3" rel="linkedin" class="linkedin"><i class="fa fa-linkedin fa-3x"></i></a></li>
-				<li><a href="https://github.com/elreyatee" rel="github" class="github"><i class="fa fa-github fa-3x"></i></a></li>
-				<li><a href="mailto:elreyatee@gmail.com" rel="email" class="email"><i class="fa fa-envelope-o fa-3x"></i></a></li>
-				<li><a href="https://plus.google.com/u/0/104320140531213502597/posts" rel="g+" class="gplus"><i class="fa fa-google-plus-square fa-3x"></i></a></li>
+				<li><a href="https://www.facebook.com/ellery.temple" rel="facebook"><i class="fa fa-facebook-square fa-3x icon"></i></a></li>
+				<li><a href="https://www.linkedin.com/pub/ellery-temple/47/737/1a3" rel="linkedin"><i class="fa fa-linkedin fa-3x icon"></i></a></li>
+				<li><a href="https://github.com/elreyatee" rel="github"><i class="fa fa-github fa-3x icon"></i></a></li>
+				<li><a href="mailto:elreyatee@gmail.com" rel="email"><i class="fa fa-envelope-o fa-3x icon"></i></a></li>
+				<li><a href="https://plus.google.com/u/0/104320140531213502597/posts" rel="g+"><i class="fa fa-google-plus-square fa-3x icon"></i></a></li>
 			</ul>
-		</footer>
-	</section>
+			<a href="#header" class="gohome"><i class="fa fa-chevron-up fa-3x icon"></i></a>
+		</article>
+	</footer>
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="wow.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
