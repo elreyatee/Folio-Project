@@ -178,7 +178,7 @@ svg {
 	fill: currentColor;
 }
 
-@media screen and (min-width: 320px) and (max-width: 640px){
+@media screen and (min-width: 320px) and (max-width: 660px){
 
 	#wrap {
 		width: 495px;
@@ -186,7 +186,7 @@ svg {
 	}
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 660px) {
 
 
 }
