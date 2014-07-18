@@ -47,7 +47,7 @@ section, footer {
 	background: url('img/black_pattern04.jpg');
 }
 
-header > a {
+header > span {
 	float: right;
 }
 

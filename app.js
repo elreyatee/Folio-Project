@@ -1,7 +1,7 @@
 var $button = $('button');
 var $wrap = $('#wrap');
 var index = 0;
-var $menu = $('header a');
+var $menu = $('header span');
 var $nav = $('.nav');
 
 new WOW().init();
