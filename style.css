@@ -8,33 +8,47 @@
 	outline: 0;
 }
 
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
 body {
-	font-family: 'Fredoka One', cursive;
+	font-family: 'Lato', sans-serif;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 28px;
 	color: #757575;
 }
 
+#wrap p {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 2% 2% 10% 2%;
+	background-color: rgba(43, 43, 44, 0.5);
+	display: block;
+}
+
 h1 {
-	font-family: 'PT Sans', sans-serif;
 	font-size: 2.5em;
 	text-align: center;
 }
 
 h2 {
+	font-family: 'Fredoka One', cursive;
 	font-size: 1.25em;
 	text-align: center;
 }
 
+a {
+	font-family: 'Fredoka One', cursive;
+}
+
 p {
-	font-family: 'VT323';
 	font-size: 1.25em;
 	text-align: justify;
 	color: #000;
-}
-
-nav ul {
-	text-align: right;
 }
 
 nav li {
@@ -88,7 +102,6 @@ header h1 {
 	cursor: pointer;
 	height: 400px;
 	width: 660px;
-	border: 1px solid red;
 }
 
 #wrap img {
@@ -96,10 +109,10 @@ header h1 {
 	width: 100%;
 	height: 100%;
 	border-radius: 10px;
-	border: 1px solid yellow;
 }
 
 #spinner {
+	font-family: 'Fredoka One', cursive;
 	-moz-box-shadow: inset 0px 0px 0px -1px #ffffff;
 	-webkit-box-shadow: inset 0px 0px 0px -1px #ffffff;
 	box-shadow: inset 0px 0px 0px -1px #ffffff;
